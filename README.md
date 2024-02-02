@@ -1,6 +1,22 @@
 # Fish Classification Data Science Project
 ## Overview
 This repository contains code and documentation for the Fish Classification project, focusing on fish classification using a deep learning approach. The project involves training models to classify fish images into 9 different classes and different experiments.
+
+## Files
+All files contain proper documantation, overview:
+### Classes
+* CNN_Fish - model for fish classification
+* FishDataset - dataset class to retrieve images
+### Model Train and Testing
+* train - train the model using K-Fold cross validation
+* utils - functionf for reading and train/test splitting of data
+### Pretrained Models
+* model_architectures_main - main for using pretrained models as classifiers of images
+* model_architectures_train_test - train,test,validate pretrained models
+* model_architectures_utils.py - getters for different models and classifiers
+### Classifiers with Feature Extractor models
+* feature_extractor_main - main for using pretrained models as feature extractor
+
 ## Dataset
 [Link to Kaggle Dataset](https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset)
 ### Structure
@@ -116,18 +132,5 @@ We used ResNet18 as a feature extractor model and applied Random Forest, SVM, an
 We conducted experiments to assess how quickly models learn the dataset. ResNet18 demonstrated the best performance in terms of fast learning.
 ![image](https://github.com/Qehbr/Fish-Classification-DS-Project/assets/49615282/e671e95b-9fe4-459a-a6f1-0aac1871a65c)
 
-## Files
-All files contain proper documantation, overview:
-### Classes
-* CNN_Fish - model for fish classification
-* FishDataset - dataset class to retrieve images
-### Model Train and Testing
-* train - train the model using K-Fold cross validation
-* utils - functionf for reading and train/test splitting of data
-### Pretrained Models
-* model_architectures_main - main for using pretrained models as classifiers of images
-* model_architectures_train_test - train,test,validate pretrained models
-* model_architectures_utils.py - getters for different models and classifiers
-### Classifiers with Feature Extractor models
-* feature_extractor_main - main for using pretrained models as feature extractor
+
 
